@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .outer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+    .container{
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    #red{
+      background-color: red;
+    }
+    #grey1{
+      background-color: rgb(208, 198, 198);
+      grid-column: span 3;
+    }
+
+    #grey2{
+      background-color: rgb(208, 198, 198);
+      grid-area: 2/1/4/2;
+    }
+
+    #grey3{
+      background-color: rgb(208, 198, 198);
+      grid-area: 2/2/-2/4;
+    }
+
+    #h_grey{
+      background-color: rgb(208, 198, 198);
+      grid-area: -2/1/-1/2;
+    }
+
+    #v_grey{
+      background-color: rgb(208, 198, 198);
+      grid-area: 3/4/-1/-1;
+    }
+
+    #yellow{
+      background-color: yellow;
+      grid-area: -2/2/-1/3;
+    }
+
+    #black{
+      background-color: rgb(46, 46, 44);
+      grid-area: -2/3/-1/-2;
+    }
+
+    #blue{
+      background-color: rgb(31, 31, 146);
+      grid-area: 2/-2/3/-1;
+      margin-bottom: 10px;
+    }
+
+  
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+    <div class="outer">
+      <div class="container">
+        <div id="red"></div>
+        <div id="grey1"></div>
+        <div id="grey2"></div>
+        <div id="grey3"></div>
+        <div id="blue"></div>
+        <div id="v_grey"></div>
+        <div id="h_grey"></div>
+        <div id="yellow"></div>
+        <div id="black"></div>
+      </div>
+    </div>
+</body>
+
+</html>
